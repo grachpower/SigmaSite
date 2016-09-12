@@ -1,0 +1,299 @@
+/*Сбросы*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	color: #808080;
+}
+
+ul {
+	list-style: none;
+}
+
+/*общие*/
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.page {
+	background: linear-gradient(to top, #a4c7ea, #e3ecf4);
+	box-sizing: border-box;-box;
+	padding-bottom: 110px;
+	min-height: 100vh;
+	position: relative;
+	min-width: 960px;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.main-container {
+	margin: 0 auto;
+	width: 940px;
+	padding: 0 10px;
+}
+
+.menu {
+	font-size: 14px;
+}
+
+.menu__link {
+	margin-right: 16px;
+}
+
+.label {
+	color: #fb9f18;
+}
+
+.label_huge {
+	font-size: 40px;
+}
+
+/*top panel*/
+.top-panel {
+	background-color: #ededed;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.top-panel__menu {
+	float: left;
+	vertical-align: middle;
+}
+
+.search {
+	float: right;
+}
+
+.search__field {
+	background-color: #d2d2d2;
+	outline: none;
+	border: 0;
+	padding: 2px 5px 2px 10px;
+	width: 268px;
+	float: left;
+}
+
+.search__button {
+	cursor: pointer;
+	background-color: #ff9900;
+	background: linear-gradient(to bottom, #ff9a05, #ffc600);
+	float: left;
+	width: 23px;
+	height: 19px;
+	border-width: 0;
+	border-radius: 0 45% 45% 0;
+}
+
+.icon {
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+}
+
+.icon-search {
+	background-image: url(../img/search.png);
+	background-position: -1px 2px;
+}
+
+.icon-1C {
+	background-image: url(../img/1C.png);
+}
+
+.icon-business {
+	background-image: url(../img/Business.png);
+}
+
+.icon-trade {
+	background-image: url(../img/Trade.png);
+}
+
+.icon-software {
+	background-image: url(../img/SoftWare.png);
+}
+
+.icon-itservice {
+	background-image: url(../img/ItService.png);
+}
+
+.service-icon {
+	height: 59px;
+	width: 100%;
+	background-position: center;
+	background-size: auto;
+}
+
+/*header*/
+.logo {
+	margin-top: 8px;
+	display: inline-block;
+}
+
+.logo__subtext {
+	margin-left: 70px;
+}
+
+.contacts {
+	margin-left: 144px;
+	display: inline-block;
+	text-align: center;
+	font-size: 20px;
+	color: #00378a;
+}
+
+.bucket {
+	position: relative;
+	display: inline-block;
+	margin-left: 44px;
+	width: 220px;
+	background: linear-gradient(to bottom , #ffc200, #ff9700);
+	vertical-align: top;
+	text-align: center;
+}
+
+.bucket:after {
+	position: absolute;
+	bottom: -17px;
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 17px 110px 0 110px;
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #ff9700;
+}
+
+.bin {
+	margin-top: 5px;
+}
+
+.bin__link {
+	font-size: 30px;
+}
+
+.auth {
+	font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/*service menu*/
+.services {
+	margin-top: 26px;
+	border-radius: 25px;
+	background: linear-gradient(to top, #ff9700, #ffc500);
+	padding-left: 60px;
+	padding-right: 60px;
+	font-weight: 700;
+}
+
+.service {
+	display: inline-block;
+	padding-left: 8px;
+	padding-right: 5px;
+	margin-top: 5px;
+	padding-bottom: 10px;
+	border-right: 1px solid #ffe17d;
+	border-left: 1px solid #b27700;
+}
+
+.service__logo {
+	text-align: center;
+}
+
+.service:first-of-type {
+	padding-left: 0;
+	border-left: 0;
+}
+
+.service:last-of-type {
+	padding-right: 0;
+	border-right: 0;
+}
+
+/*aside*/
+.aside {
+	width: 220px;
+	background: linear-gradient(to top, #ff9600, #ffc600);
+	display: inline-block;
+	margin-top: 24px;
+	border-radius: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.aside__menu {
+	font-size: 12px;
+	margin-left: 14px;
+	line-height: 2;
+}
+
+.submenu {
+	margin-left: 30px;
+	line-height: 3;
+}
+
+/*products*/
+.products {
+	display: inline-block;
+	background-color: #FFF;
+	width: 700px;
+	margin-top: 24px;
+	border-radius: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	vertical-align: top;
+}
+
+.products__header {
+	font-size: 22px;
+	font-weight: 700;
+	margin-left: 25px;
+	color: #002e79;
+}
+
+.products__content {
+	margin-left: 25px;
+}
+
+.product {
+	width: 195px;
+}
+
+/*footer*/
+.footer {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	position: absolute;
+	bottom: 0;
+	min-width: 100%;
+	background-color: #cdcdcd;
+}
+
+.footer__menu {
+	margin-bottom: 28px;
+}
+
+.copyright {
+	float: left;
+	font-size: 14px;
+}
+
+.scm {
+	float: right;
+	font-size: 14px;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "sigma",
+  "version": "0.0.1",
+  "description": "verstka dlya saita Sigma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "site",
+    "sigma"
+  ],
+  "author": "duke",
+  "license": "MIT"
+}
