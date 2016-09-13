@@ -1,6 +1,6 @@
 {
-  "name": "sigma",
-  "version": "0.0.1",
+  "name": "Sigma",
+  "version": "0.0.5",
   "description": "verstka dlya saita Sigma",
   "main": "index.js",
   "scripts": {
@@ -13,9 +13,16 @@
   "author": "duke",
   "license": "MIT",
   "devDependencies": {
-    "cssmin": "^0.4.3",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp.spritesmith": "^6.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grachpower/SigmaSite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/grachpower/SigmaSite/issues"
+  },
+  "homepage": "https://github.com/grachpower/SigmaSite#readme"
 }
