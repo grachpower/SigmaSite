@@ -381,8 +381,12 @@ body {
 	height: 0;
 	border-top: 13px solid transparent;
 	border-bottom: 13px solid transparent;
-	border-right: 15px solid blue;
+	border-right: 15px solid #001142;
 	border-radius: 5px;
+}
+
+.triangle-left:hover {
+	border-right-color: #1d5fc4;
 }
 
 .triangle-right {
@@ -390,8 +394,12 @@ body {
 	height: 0;
 	border-top: 13px solid transparent;
 	border-bottom: 13px solid transparent;
-	border-left: 15px solid blue;
+	border-left: 15px solid #001142;
 	border-radius: 5px;
+}
+
+.triangle-right:hover {
+	border-left-color: #1d5fc4;
 }
 
 /*footer*/
