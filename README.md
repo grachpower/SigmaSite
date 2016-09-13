@@ -5,16 +5,18 @@
     верстка страницы сайта "Сигма" 
 
 ##Файловая структура:##
-
-    css - каталог с CSS-стилями проекта;
-    img - каталог с изображениями для верстки.
-    index.html - файл содержащий разметку веб-страницы.
-    Основные шрифты используемые в проекте
+    
+    *src - каталог с исходными файлами вёрстки
+    *css - каталог с CSS-стилями проекта;
+    *img - каталог с изображениями для верстки.
+    *index.html - файл содержащий разметку веб-страницы.
+    *Основные шрифты используемые в проекте
+    *dist - каталог содержащий минифицированные версии html, css документов и картинок
 
 ##Поддерживаемые браузерыe##
 
-    Google Chrome(last version);
-    Firefox(last version);
-    Opera(last version);
-    Yandex Browser(last version);
-    IE11.
+   *Google Chrome(last version);
+   *Firefox(last version);
+   *Opera(last version);
+   *Yandex Browser(last version);
+   *IE11.
