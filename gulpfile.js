@@ -14,6 +14,10 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('.src/css'));
 });
 
+gulp.task('sass:watch', function () {
+  gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
 // собираем css - gulp css-libs
 gulp.task('css-libs', function() {
     return gulp.src('src/css/style.css')
