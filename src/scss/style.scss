@@ -1,7 +1,7 @@
 @import "resets";
-@import "header";
-@import "foooter";
-@import "content";
-@import "typographics";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/page";
+@import "layout/top-panel";
+@import "typographics/typographics";
 @import "components";
-@import "resets";

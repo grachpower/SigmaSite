@@ -9,13 +9,19 @@ var gulp = require('gulp'), // Подключаем Gulp
     sass = require('gulp-sass');
 
 gulp.task('sass', function () {
-  return gulp.src('.src/sass/**/*.scss')
+  return gulp.src('src/scss/style.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('.src/css'));
+    .pipe(gulp.dest('src/css'));
 });
 
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
+});
+
+gulp.task('stream', function () {
+    // Endless stream mode
+    return watch('css/**/*.css', { ignoreInitial: false })
+        .pipe(gulp.dest('dist'));
 });
 
 // собираем css - gulp css-libs
@@ -47,4 +53,4 @@ gulp.task('clean', function() {
 });
 
 // собираем проект
-gulp.task('build', ['clean', 'img', 'htmlmin', 'css-libs'], function() {});
+gulp.task('build', ['clean', 'sass', 'img', 'htmlmin', 'css-libs', 'stream'], function() {});
