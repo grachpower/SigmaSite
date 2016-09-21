@@ -32,3 +32,17 @@
 	border-width: 0;
 	border-radius: 0 45% 45% 0;
 }
+
+.search__button:before {
+	content: "";
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 16px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-image: url(../img/icons.png);
+}

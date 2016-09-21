@@ -6,7 +6,17 @@ var gulp = require('gulp'), // Подключаем Gulp
     htmlmin = require('gulp-html-minifier'), // Подключаем библиотеку для минификации html
     imageminJpegtran = require('imagemin-jpegtran'), // Подключаем библиотеку для минификации JPEG
     watch = require('gulp-watch'),
+    fileinclude = require('gulp-file-include'),
     sass = require('gulp-sass');
+
+gulp.task('fileinclude', function() {
+  gulp.src(['index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./'));
+});
 
 gulp.task('sass', function () {
   return gulp.src('src/scss/style.scss')
@@ -20,7 +30,7 @@ gulp.task('sass:watch', function () {
 
 gulp.task('stream', function () {
     // Endless stream mode
-    return watch('css/**/*.css', { ignoreInitial: false })
+    return watch('css/**/*.scss', { ignoreInitial: false })
         .pipe(gulp.dest('dist'));
 });
 

@@ -1,0 +1,4 @@
+@mixin .path($name) {
+  $base-path: "../img/";
+  background-image: url("${base}${name}");
+}

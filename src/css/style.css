@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0; }
 
+button {
+  text-indent: -9999px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .footer {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -14,7 +21,7 @@
 .page {
   background: linear-gradient(to top, #a4c7ea, #e3ecf4);
   box-sizing: border-box;
-  padding-bottom: 110px;
+  padding-bottom: 230px;
   min-height: 100vh;
   position: relative;
   min-width: 960px; }
@@ -40,14 +47,35 @@
   float: left; }
 
 .search__button {
-  cursor: pointer;
-  background-color: #ff9900;
-  background: linear-gradient(to bottom, #ff9a05, #ffc600);
   float: left;
-  width: 23px;
-  height: 19px;
-  border-width: 0;
-  border-radius: 0 45% 45% 0; }
+  position: relative;
+  border-radius: 0 10px 10px 0;
+  background-color: #ffaf00;
+  background-image: linear-gradient( 0, rgb(255,150,0) 0%, rgb(255,198,0) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(255,150,0) 0%, rgb(255,198,0) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(255,150,0) 0%, rgb(255,198,0) 100%);
+  height: 18px;
+  width: 25px;
+}
+
+.search__button:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(../img/icons.png);
+}
+
+.search__button:hover:before {
+  background-position: -16px 0;
+  background-image: url(../img/icons.png);
+}
 
 a {
   text-decoration: none;
@@ -91,24 +119,20 @@ body {
   height: 14px;
   width: 14px; }
 
-.icon-search {
-  background-image: url(../img/search.png);
-  background-position: -1px 2px; }
-
 .icon-1C {
-  background-image: url(../img/1C.png); }
+  background-image: url(../img/services/icon-1c.png); }
 
 .icon-business {
-  background-image: url(../img/Business.png); }
+  background-image: url(../img/services/icon-accountant.png); }
 
 .icon-trade {
-  background-image: url(../img/Trade.png); }
+  background-image: url(../img/services/icon-equipment.png); }
 
 .icon-software {
-  background-image: url(../img/SoftWare.png); }
+  background-image: url(../img/services/icon-service.png); }
 
 .icon-itservice {
-  background-image: url(../img/ItService.png); }
+  background-image: url(../img/services/icon-software.png); }
 
 .service-icon {
   height: 59px;
@@ -124,13 +148,13 @@ body {
   margin-left: 70px; }
 
 .contacts {
-  margin-left: 144px;
+  margin-left: 143px;
   display: inline-block;
   text-align: center;
   font-size: 20px;
   color: #00378a; }
 
-.bucket {
+.basket {
   position: relative;
   display: inline-block;
   margin-left: 44px;
@@ -139,7 +163,7 @@ body {
   vertical-align: top;
   text-align: center; }
 
-.bucket:after {
+.basket:after {
   position: absolute;
   bottom: -17px;
   content: "";
@@ -151,7 +175,7 @@ body {
   border-color: transparent;
   border-top-color: #ff9700; }
 
-.basket {
+.basket__caption {
   margin-top: 5px; }
 
 .basket__link {
@@ -208,7 +232,7 @@ body {
 .menu__item {
   margin-bottom: 15px; }
 
-.products {
+.content {
   display: inline-block;
   background-color: #FFF;
   width: 700px;
@@ -220,10 +244,13 @@ body {
   vertical-align: top; }
 
 .products__header {
+  color: #002e79;
+  font-weight: bold;
+  font-size: 22px;
   margin-left: 26px;
-  color: #003280; }
+}
 
-.products__content {
+.products {
   margin-left: 13px; }
 
 .product {
@@ -233,29 +260,39 @@ body {
   margin-right: 13px;
   margin-left: 13px; }
 
-.product__img {
+.product__preview {
   text-align: center;
-  position: relative; }
+  position: relative;
+  display: block;
+}
 
 .product__name {
   margin-bottom: 18px; }
 
-.product__link {
+.product__description {
+  display: block;
   text-decoration: underline;
-  color: #003280; }
+  color: #003280;
+}
 
-.price {
+.product__offer {
+  margin-top: 18px;
+}
+
+.product__price {
   display: inline-block;
   margin-top: 10px;
   font-size: 18px;
   font-weight: 700;
   color: #fb9f18; }
 
-.icon-basket {
+.product__add-to-basket {
   float: right;
-  background-image: url(../img/icon_basket.png);
-  width: 34px;
-  height: 26px; }
+  width: 33px;
+  height: 26px;
+  background-position: 0 -15px;
+  background-image: url(../img/icons.png);
+}
 
 .icon-topsales {
   position: absolute;
@@ -263,15 +300,17 @@ body {
   right: 0;
   width: 80px;
   height: 80px;
-  background-image: url(../img/top_sales.png); }
+  background-image: url(../img/products/top_sales.png); }
 
 .icon-topsales:before {
   font-style: normal;
   color: #fff;
-  content: "Лидер Продаж";
+  content: "";
+  text-indent: 9999px;
   position: absolute;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+}
 
 .icon-stock {
   position: absolute;
@@ -279,11 +318,11 @@ body {
   right: 0;
   width: 80px;
   height: 80px;
-  background-image: url(../img/stock.png); }
+  background-image: url(../img/products/stock.png); }
 
 .icon-stock:before {
   font-style: normal;
-  content: "Акция";
+  content: "";
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%); }
@@ -318,7 +357,9 @@ body {
   border-top: 13px solid transparent;
   border-bottom: 13px solid transparent;
   border-right: 15px solid #001142;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-indent: -9999px;
+}
 
 .triangle-left:hover {
   border-right-color: #1d5fc4; }
@@ -329,7 +370,9 @@ body {
   border-top: 13px solid transparent;
   border-bottom: 13px solid transparent;
   border-left: 15px solid #001142;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-indent: -9999px;
+}
 
 .triangle-right:hover {
   border-left-color: #1d5fc4; }
