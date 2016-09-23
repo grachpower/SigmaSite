@@ -7,3 +7,8 @@ body {
   font-family: arial, helvetica, sans-serif;
   font-size: 12px;
 }
+
+@import 'settings.scss';
+@import 'components/components.scss';
+@import 'layout/layout.scss';
+@import 'typographics/typographics.scss';

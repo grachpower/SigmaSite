@@ -1,48 +1,10 @@
 .top-panel {
-	background-color: #ededed;
-	padding-top: 10px;
-	padding-bottom: 10px;
+  background-color: #ededed;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .top-panel__menu {
-	float: left;
-	vertical-align: middle;
-}
-
-.search {
-	float: right;
-}
-
-.search__field {
-	background-color: #d2d2d2;
-	outline: none;
-	border: 0;
-	padding: 2px 5px 2px 10px;
-	width: 268px;
-	float: left;
-}
-
-.search__button {
-	cursor: pointer;
-	background-color: #ff9900;
-	background: linear-gradient(to bottom, #ff9a05, #ffc600);
-	float: left;
-	width: 23px;
-	height: 19px;
-	border-width: 0;
-	border-radius: 0 45% 45% 0;
-}
-
-.search__button:before {
-	content: "";
-	position: absolute;
-	display: block;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%,-50%);
-	width: 16px;
-	height: 15px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-image: url(../img/icons.png);
+  float: left;
+  vertical-align: middle;
 }
