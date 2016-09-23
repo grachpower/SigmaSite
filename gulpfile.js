@@ -5,7 +5,8 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-html-minifier'),
     watch = require('gulp-watch'),
     fileinclude = require('gulp-file-include'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('fileinclude', function() {
   gulp.src(['index.html'])
@@ -22,36 +23,49 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('src/css'));
 });
 
-gulp.task('sass_watch', function () {
+gulp.task('sass-watch', function () {
   return watch('src/css/**/*.scss', function () {
     gulp.src('src/css/style.scss')
       .pipe(sass().on('error', sass.logError))
+      .pipe(autoprefixer({
+        browsers: ['last 10 versions'],
+        cascade: false
+      }))
       .pipe(gulp.dest('src/css'));
   });
 });
 
-gulp.task('css-libs', function() {
-    return gulp.src('src/css/style.css')
-        .pipe(cssnano())
-        .pipe(gulp.dest('dist/css'));
+gulp.task('css-min', function() {
+  return gulp.src('src/css/style.css')
+    .pipe(cssnano())
+    .pipe(gulp.dest('dist/css'));
+});
+
+gulp.task('autoprefix', function() {
+  return gulp.src('src/css/style.css')
+    .pipe(autoprefixer({
+      browsers: ['last 10 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('src/css/'));
 });
 
 gulp.task('htmlmin', function() {
-    return gulp.src('src/*.html')
-        .pipe(htmlmin({
-            collapseWhitespace: true
-        }))
-        .pipe(gulp.dest('dist/'));
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('img', function() {
-    return gulp.src('src/img/**/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/img/'));
+  return gulp.src('src/img/**/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/img/'));
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist');
+  return del.sync('dist');
 });
 
-gulp.task('build', ['clean', 'sass', 'img', 'htmlmin', 'css-libs', 'stream']);
+gulp.task('build', ['clean', 'sass', 'autoprefix', 'img', 'htmlmin', 'css-min']);

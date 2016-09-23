@@ -19,10 +19,8 @@
     "gulp-file-include": "^0.14.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.3",
-    "gulp-tinypng": "^1.0.2",
-    "gulp-watch": "^4.3.9",
-    "imagemin-jpegtran": "^5.0.2",
-    "imagemin-pngquant": "^5.0.0"
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-watch": "^4.3.9"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,3 @@
-.icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  height: 14px;
-  width: 14px;
-}
-
 .icon-1C {
   background-image: url(../img/services/icon-1c.png);
 }
@@ -24,4 +16,10 @@
 
 .icon-itservice {
   background-image: url(../img/services/icon-software.png);
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
 }

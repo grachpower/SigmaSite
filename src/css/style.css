@@ -342,13 +342,6 @@ a {
     outline: none;
     color: #f00; }
 
-.icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  height: 14px;
-  width: 14px; }
-
 .icon-1C {
   background-image: url(../img/services/icon-1c.png); }
 
@@ -363,6 +356,11 @@ a {
 
 .icon-itservice {
   background-image: url(../img/services/icon-software.png); }
+
+.icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block; }
 
 .label {
   color: #fb9f18; }
