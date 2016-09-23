@@ -6,10 +6,18 @@ var gulp = require('gulp'),
     watch = require('gulp-watch'),
     fileinclude = require('gulp-file-include'),
     sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    spritesmith = require('gulp.spritesmith');
+
+gulp.task('sprite', function () {
+  return gulp.src('img/icons/*.png')
+    .pipe(spritesmith({
+      imgName: 'icons.png'
+    }));
+});
 
 gulp.task('fileinclude', function() {
-  gulp.src(['index.html'])
+  return gulp.src(['index.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
