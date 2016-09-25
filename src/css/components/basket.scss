@@ -1,33 +1,33 @@
 .basket {
   position: relative;
-  width: 220px;
+  width: 18.3em;
   background: linear-gradient(to bottom, #ffc200, #ff9700);
   text-align: center;
 
   &:after {
     position: absolute;
-    bottom: -17px;
+    bottom: -1.3em;
     content: "";
     display: block;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 17px 110px 0 110px;
+    border-width: 1.4em 9.16em 0 9.16em;
     border-color: transparent;
     border-top-color: #ff9700;
   }
 }
 
 .basket__caption {
-  margin-top: 5px;
+  margin-top: .4em;
 }
 
 .basket__link {
-  font-size: 30px;
+  font-size: 2.5em;
 }
 
 .auth {
-  font-size: 18px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  font-size: 1.5em;
+  margin-top: .4em;
+  margin-bottom: .4em;
 }

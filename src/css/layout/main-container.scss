@@ -1,5 +1,6 @@
 .main-container {
   margin: 0 auto;
-  width: 940px;
-  padding: 0 10px;
+  min-width: 300px;
+  max-width: 940px;
+  padding: 0 .9em;
 }

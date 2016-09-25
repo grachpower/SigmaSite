@@ -1,16 +1,47 @@
 .menu {
-  font-size: 14px;
-}
-
-.menu__link {
-  margin-right: 16px;
+  font-size: 1.16em;
 }
 
 .submenu {
-  margin-left: 30px;
-  margin-top: 15px;
+  margin-left: 1.8em;
+  margin-top: 1em;
 }
 
 .menu__item {
-  margin-bottom: 15px;
+  margin-right: 1.2em;
+  display: inline-block;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.menu__button {
+  text-indent: -9999px;
+  display: none;
+}
+
+.hamburger {
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  border-color: #000;
+  border-top: .3em solid #000;
+  border-bottom: .3em solid #000;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    display: block;
+    border-color: inherit;
+    border-top-width: .3em;
+    border-top-style: solid;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  &:hover {
+    border-color: #f00;
+  }
 }
