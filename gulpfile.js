@@ -1,13 +1,13 @@
 var gulp = require('gulp'),
-    cssnano = require('gulp-cssnano'),
-    del = require('del'),
-    imagemin = require('gulp-imagemin'),
-    htmlmin = require('gulp-html-minifier'),
-    watch = require('gulp-watch'),
-    fileinclude = require('gulp-file-include'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    spritesmith = require('gulp.spritesmith');
+  cssnano = require('gulp-cssnano'),
+  del = require('del'),
+  imagemin = require('gulp-imagemin'),
+  htmlmin = require('gulp-html-minifier'),
+  watch = require('gulp-watch'),
+  fileinclude = require('gulp-file-include'),
+  sass = require('gulp-sass'),
+  autoprefixer = require('gulp-autoprefixer'),
+  spritesmith = require('gulp.spritesmith');
 
 gulp.task('sprite', function () {
   return gulp.src('img/icons/*.png')
