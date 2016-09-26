@@ -4,11 +4,17 @@
 }
 
 .header__contacts {
-  float: left;
-  margin-left: 7.15em;
+  float: right;
   margin-top: 1em;
 }
 
 .header__basket {
   float: right;
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .header__contacts {
+    display: none;
+  }
 }

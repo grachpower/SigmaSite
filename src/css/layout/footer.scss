@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 2em;
+  padding-bottom: 2em;
   position: absolute;
   bottom: 0;
   min-width: 100%;
@@ -8,5 +8,11 @@
 }
 
 .footer__menu {
-  margin-bottom: 28px;
+  margin-bottom: 2.3em;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__menu {
+    display: none;
+  }
 }

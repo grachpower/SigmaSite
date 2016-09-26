@@ -1,13 +1,13 @@
 .products {
-  margin-left: 13px;
+  margin-left: 1em;
 }
 
 .product {
   display: inline-block;
-  width: 195px;
-  margin-top: 30px;
-  margin-right: 13px;
-  margin-left: 13px;
+  width: calc(30% - 1em);
+  margin-top: 2.5em;
+  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .product__preview {
@@ -17,7 +17,7 @@
 }
 
 .product__name {
-  margin-bottom: 18px;
+  margin-bottom: 1.5px;
 }
 
 .product__description {
@@ -27,13 +27,13 @@
 }
 
 .product__offer {
-  margin-top: 18px;
+  margin-top: 1.5em;
 }
 
 .product__price {
   display: inline-block;
-  margin-top: 10px;
-  font-size: 18px;
+  margin-top: .6em;
+  font-size: 1.5em;
   font-weight: 700;
   color: #fb9f18;
 }
@@ -79,5 +79,17 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    width: calc(50% - 3em);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    width: calc(100% - 2em);
   }
 }

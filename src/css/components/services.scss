@@ -1,38 +1,36 @@
-.services {
-  margin-top: 26px;
-  border-radius: 25px;
+.services-menu {
+  margin-top: 1.85em;
+  border-radius: 1.85em;
   background: linear-gradient(to top, #ff9700, #ffc500);
-  padding-left: 60px;
-  padding-right: 60px;
   font-weight: 700;
 }
 
-.service {
+.service-menu__list {
+  padding-top: .35em;
+  font-size: .9em;
+}
+
+.service-menu__item {
   float: left;
-  padding-left: 8px;
-  padding-right: 5px;
-  margin-top: 5px;
-  padding-bottom: 10px;
+  width: calc(20% - 2px);
+  padding-bottom: .7em;
+  text-align: center;
   border-right: 1px solid #ffe17d;
   border-left: 1px solid #b27700;
-}
 
-.service:first-of-type {
-  padding-left: 0;
-  border-left: 0;
-}
+  &:first-of-type {
+    padding-left: 0;
+    border-left: 0;
+  }
 
-.service:last-of-type {
-  padding-right: 0;
-  border-right: 0;
-}
-
-.service__logo {
-  text-align: center;
+  &:last-of-type {
+    padding-right: 0;
+    border-right: 0;
+  }
 }
 
 .service-icon {
-  height: 59px;
+  height: 4.2em;
   width: 100%;
   background-position: center;
   background-size: auto;

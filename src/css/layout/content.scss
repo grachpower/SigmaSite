@@ -1,9 +1,15 @@
 .content {
   float: right;
   background-color: #FFF;
-  width: 700px;
-  margin-top: 24px;
-  border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  width: 74%;
+  margin-top: 2em;
+  border-radius: 1.6em;
+  padding-top: 1.6em;
+  padding-bottom: 1.6em;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
 }

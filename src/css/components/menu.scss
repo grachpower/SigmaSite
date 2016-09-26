@@ -5,6 +5,7 @@
 .submenu {
   margin-left: 1.8em;
   margin-top: 1em;
+  line-height: 2em;
 }
 
 .menu__item {
@@ -44,4 +45,19 @@
   &:hover {
     border-color: #f00;
   }
+}
+
+@media screen and (max-width: 940px) {
+  .menu__button {
+    display: block;
+    float: left;
+  }
+
+  .top-panel__menu__list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
 }

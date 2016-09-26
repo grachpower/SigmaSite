@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, init-scale=1">
     <title>СИГМА - автоматизация бизнеса</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,26 +12,26 @@
       	<div class="main-container clearfix">
       		<nav class="menu top-panel__menu">
             <button type="button" class="menu__button hamburger">Меню</button>
-            <ul class="menu__list">
-              <li class="menu__item top-panel__menu__item">
+            <ul class="menu__list top-panel__menu__list">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Единый семинар</a>
               </li>
-              <li class="menu__item top-panel__menu__item">
+              <li class="menu__item">
                 <a href="#" class="menu__link">О компании</a>
               </li>
-              <li class="menu__item top-panel__menu__item">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Вакансии</a>
               </li>
-              <li class="menu__item top-panel__menu__item">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Новости</a>
               </li>
-              <li class="menu__item top-panel__menu__item">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Акции</a>
               </li>
-              <li class="menu__item top-panel__menu__item">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Клиенты</a>
               </li>
-              <li class="menu__item top-panel__menu__item">
+              <li class="menu__item">
                 <a href="#" class="menu__link">Контакты</a>
               </li>
             </ul>
@@ -50,16 +51,7 @@
               <img src="img/logo.png" alt="логотип компании СИГМА">
             </a>
         	</div>
-        	<div class="contacts header__contacts">
-            <a href="tel:+78412450054" class="phone">
-              8(8412)
-              <span class="phone-large">450-054</span>
-            </a>
-            <div class="address">
-              <span>г.Пенза, ул.Богданова 38</span>
-            </div>
-        	</div>
-        	<div class="basket header__basket">
+          <div class="basket header__basket">
             <div class="basket__caption">
               <a href="#" class="basket__link">Корзина</a>
             </div>
@@ -69,28 +61,49 @@
               <a href="#">регистрация</a>
             </div>
         	</div>
+        	<div class="contacts header__contacts">
+            <a href="tel:+78412450054" class="phone">
+              8(8412)
+              <span class="phone-large">450-054</span>
+            </a>
+            <div class="address">
+              <span>г.Пенза, ул.Богданова 38</span>
+            </div>
+        	</div>
         </header>
-        <nav class="menu services clearfix">
-          <a href="#" class="service">
-            <div class="service-icon icon icon-1C"></div>
-            <span>1C: Предприятие</span>
-          </a>
-          <a href="#" class="service">
-            <div class="icon service-icon icon-business"></div>
-            <span>Услуги бухгалтера</span>
-          </a>
-          <a href="#" class="service">
-            <div class="icon service-icon icon-trade"></div>
-            <span>Торговое оборудование</span>
-          </a>
-          <a href="#" class="service">
-            <div class="icon service-icon icon-software"></div>
-            <span>Программное обеспечение</span>
-          </a>
-          <a href="#" class="service">
-            <div class="icon service-icon icon-itservice"></div>
-            <span>IT обслуживание</span>
-          </a>
+        <nav class="menu services-menu">
+          <ul class="menu__list service-menu__list clearfix">
+            <li class="service-menu__item">
+              <a href="#" class="menu__link">
+                <div class="service-icon icon icon-1C"></div>
+                <span>1C: Предприятие</span>
+              </a>
+            </li>
+            <li class="service-menu__item">
+              <a href="#" class="menu__link">
+                <div class="icon service-icon icon-business"></div>
+                <span>Услуги бухгалтера</span>
+              </a>
+            </li>
+            <li class="service-menu__item">
+              <a href="#" class="menu__link">
+                <div class="icon service-icon icon-trade"></div>
+                <span>Торговое оборудование</span>
+              </a>
+            </li>
+            <li class="service-menu__item">
+              <a href="#" class="menu__link">
+                <div class="icon service-icon icon-software"></div>
+                <span>Программное обеспечение</span>
+              </a>
+            </li>
+            <li class="service-menu__item">
+              <a href="#" class="menu__link">
+                <div class="icon service-icon icon-itservice"></div>
+                <span>IT обслуживание</span>
+              </a>
+            </li>
+          </ul>
         </nav>
         <aside class="sidebar">
           <ul class="menu sidebar__menu">
@@ -270,48 +283,66 @@
               </div>
             </div>
           </div>
-          <ul class="pagination">
-            <li class="pagination__item">
-              <a class="pagination__link" href="#"><div class="triangle-left">Назад</div></a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination__link_active" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">5</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">6</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">7</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#"><div class="triangle-right">Вперед</div></a>
-            </li>
-          </ul>
+          <div class="pagination-wrapper">
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link" href="#"><div class="triangle-left">Назад</div></a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination__link_active" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">5</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">6</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#">7</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link" href="#"><div class="triangle-right">Вперед</div></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <footer class="footer clearfix">
         <div class="main-container">
           <nav class="menu footer__menu">
-            <a class="menu__link" href="#">Единый семинар</a>
-    				<a class="menu__link" href="#">О компании</a>
-    				<a class="menu__link" href="#">Вакансии</a>
-    				<a class="menu__link" href="#">Новости</a>
-    				<a class="menu__link" href="#">Акции</a>
-    				<a class="menu__link" href="#">Клиенты</a>
-    				<a class="menu__link" href="#">Контакты</a>
-          </nav>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Единый семинар</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Вакансии</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Клиенты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+      		</nav>
           <div class="copyright">
             <span>© ООО "Сигма", 2010-2013</span>
           </div>
