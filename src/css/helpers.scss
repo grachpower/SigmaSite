@@ -1,3 +1,7 @@
+/*
+ * Разве так объявляется миксин? Где описание миксина?
+ */
+
 @mixin .path($name) {
   $base-path: "../img/";
   background-image: url("${base}${name}");

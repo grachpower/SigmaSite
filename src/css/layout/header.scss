@@ -17,10 +17,12 @@
   .header__contacts {
     display: none;
   }
-}
-
 @media screen and (max-width: 480px) {
   .header__logo {
+}
+/*
+ * Зачем это???
+ */
     width: calc(40%);
   }
 }
