@@ -1,3 +1,6 @@
+/*
+ * Зачем обвертка???
+ */
 .pagination-wrapper {
   text-align: center;
 }
@@ -14,7 +17,9 @@
   margin-left: .4em;
   margin-right: .4em;
 }
-
+/*
+ * Используй SCSS
+ */
 .pagination__item:first-of-type {
   margin-left: 0;
 }
@@ -30,7 +35,9 @@
 .pagination__link_active {
   color: #003382;
 }
-
+/*
+ * А что будет если еще добавятся стрелке в другом компоненте?
+ */
 .triangle-left {
   width: 0;
   height: 0;

@@ -1,3 +1,7 @@
+/*
+ * Где форматирование????
+ */
+
 var gulp = require('gulp'),
   cssnano = require('gulp-cssnano'),
   del = require('del'),
@@ -48,7 +52,9 @@ gulp.task('css-min', function() {
     .pipe(cssnano())
     .pipe(gulp.dest('dist/css'));
 });
-
+/*
+ * Что это ???
+ */
 gulp.task('autoprefix', function() {
   return gulp.src('src/css/style.css')
     .pipe(autoprefixer({
