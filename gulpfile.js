@@ -52,7 +52,7 @@ gulp.task('css-min', function() {
 gulp.task('autoprefix', function() {
   return gulp.src('src/css/style.css')
     .pipe(autoprefixer({
-      browsers: ['last 10 versions'],
+      browsers: ['last 2 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('src/css/'));
