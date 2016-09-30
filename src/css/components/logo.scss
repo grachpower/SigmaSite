@@ -1,9 +1,4 @@
-/*
- * Для чего это???
- */
-
-@media screen and (max-width: 480px) {
-  .logo__img {
-    width: calc(100%);
-  }
+.logo__img {
+  width: 100%;
+  height: auto;
 }

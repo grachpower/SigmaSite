@@ -3,13 +3,30 @@
   padding: 0;
 }
 
+html {
+    font-size: 10px;
+}
+
 body {
   font-family: arial, helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 1.2rem;
   background: linear-gradient(to top, #a4c7ea, #e3ecf4);
 }
 
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 6px;
+    }
+}
+
 @import 'settings.scss';
+@import 'helpers.scss';
 @import 'components/components.scss';
 @import 'layout/layout.scss';
 @import 'typographics/typographics.scss';

@@ -1,25 +1,21 @@
-/*
- * Почему не используешь миксин???
- */
-
 .icon-1C {
-  background-image: url(../img/services/icon-1c.png);
+    @include path("services/icon-1c.png");
 }
 
 .icon-business {
-  background-image: url(../img/services/icon-accountant.png);
+    @include path("services/icon-accountant.png");
 }
 
 .icon-trade {
-  background-image: url(../img/services/icon-equipment.png);
+    @include path("services/icon-equipment.png");
 }
 
 .icon-software {
-  background-image: url(../img/services/icon-service.png);
+    @include path("services/icon-service.png");
 }
 
 .icon-itservice {
-  background-image: url(../img/services/icon-software.png);
+     @include path("services/icon-software.png");
 }
 
 .icon {

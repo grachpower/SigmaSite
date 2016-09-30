@@ -1,28 +1,21 @@
 .header__logo {
-  margin-top: .8px;
+  margin-top: 1rem;
   float: left;
+  width: 30%;
 }
 
 .header__contacts {
   float: right;
-  margin-top: 1em;
+  margin-top: 1.2rem;
 }
 
 .header__basket {
   float: right;
-  margin-left: 2em;
+  margin-left: 2.4rem;
 }
 
 @media screen and (max-width: 768px) {
   .header__contacts {
     display: none;
-  }
-@media screen and (max-width: 480px) {
-  .header__logo {
-}
-/*
- * Зачем это???
- */
-    width: calc(40%);
   }
 }

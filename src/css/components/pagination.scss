@@ -1,14 +1,6 @@
-/*
- * Зачем обвертка???
- */
-.pagination-wrapper {
-  text-align: center;
-}
-
 .pagination {
-  display: inline-block;
-  width: 18em;
   margin-top: 4em;
+  text-align: center;
 }
 
 .pagination__item {
@@ -16,16 +8,14 @@
   vertical-align: middle;
   margin-left: .4em;
   margin-right: .4em;
-}
-/*
- * Используй SCSS
- */
-.pagination__item:first-of-type {
-  margin-left: 0;
-}
 
-.pagination__item:last-of-type {
-  margin-right: 0;
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
 }
 
 .pagination__link {
@@ -35,10 +25,8 @@
 .pagination__link_active {
   color: #003382;
 }
-/*
- * А что будет если еще добавятся стрелке в другом компоненте?
- */
-.triangle-left {
+
+.pagination__triangle-left {
   width: 0;
   height: 0;
   border-top: 1em solid transparent;
@@ -46,13 +34,13 @@
   border-right: 1.1em solid #001142;
   border-radius: .4em;
   text-indent: -9999px;
+
+    &:hover {
+      border-right-color: #1d5fc4;
+    }
 }
 
-.triangle-left:hover {
-  border-right-color: #1d5fc4;
-}
-
-.triangle-right {
+.pagination__triangle-right {
   width: 0;
   height: 0;
   border-top: 1em solid transparent;
@@ -60,8 +48,8 @@
   border-left: 1.1em solid #001142;
   border-radius: .4em;
   text-indent: -9999px;
-}
 
-.triangle-right:hover {
-  border-left-color: #1d5fc4;
+    &:hover {
+      border-left-color: #1d5fc4;
+    }
 }

@@ -1,9 +1,16 @@
 .top-panel {
   background-color: #ededed;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .top-panel__menu {
   float: left;
+}
+
+
+@media screen and (max-width: 940px) {
+  .top-panel__menu__list {
+    display: none;
+  }
 }

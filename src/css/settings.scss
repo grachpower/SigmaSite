@@ -1,17 +1,7 @@
-$color: #fff;
-
-/*
- * Что тут это делает???
- */
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-ul {
-  list-style: none;
-}
+$orange-gradient-bottom: rgb(255,150,0);
+$orange-gradient-top: rgb(255,198,0);
+$color-orange: #ffaf00;
+$color-gray: #d2d2d2;
 
 button {
   border: none;
