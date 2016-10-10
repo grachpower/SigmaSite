@@ -9,8 +9,16 @@
 }
 
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 640px) {
   .top-panel__menu__list {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 2;
+    transition: max-height .7s ease 0s;
+    font-size: 1.6rem;
+  }
+
+  .top-panel__menu__item {
+      display: block;
   }
 }

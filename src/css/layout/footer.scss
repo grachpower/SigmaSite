@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
   position: absolute;
   bottom: 0;
   min-width: 100%;
@@ -8,21 +8,31 @@
 }
 
 .footer__menu {
-  margin-bottom: 2.3em;
+  margin-bottom: 3rem;
+}
+
+.footer__contacts {
+    display: none;
+    color: #000;
+    margin-bottom: 3rem;
 }
 
 .copyright {
   float: left;
-  font-size: 1.1em;
+  font-size: 1.3rem;
 }
 
 .scm {
   float: right;
-  font-size: 1.1em;
+  font-size: 1.3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .footer__menu {
     display: none;
+  }
+
+  .footer__contacts {
+      display: block;
   }
 }

@@ -11,27 +11,28 @@
       <div class="top-panel">
       	<div class="main-container clearfix">
       		<nav class="menu top-panel__menu">
-            <button type="button" class="menu__button hamburger">Меню</button>
+            <label for="menu__checkbox" class="menu__button hamburger">Меню</label>
+            <input type="checkbox" id="menu__checkbox" class="menu__checkbox" name="menu__checkbox">
             <ul class="menu__list top-panel__menu__list">
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">Единый семинар</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">О компании</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">Вакансии</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">Новости</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">Акции</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">Клиенты</a>
               </li>
-              <li class="menu__item">
+              <li class="menu__item top-panel__menu__item">
                 <a href="#" class="menu__link">Контакты</a>
               </li>
             </ul>
@@ -56,9 +57,8 @@
               <a href="#" class="basket__link">Корзина</a>
             </div>
             <div class="auth">
-              <a href="#">вход</a>
-              /
-              <a href="#">регистрация</a>
+              <a class="sign-in" href="#">вход</a>
+              <a class="sign-up" href="#">регистрация</a>
             </div>
         	</div>
         	<div class="contacts header__contacts">
@@ -160,7 +160,7 @@
           <div class="products">
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
                 <i class="icon icon-stock"></i>
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
@@ -171,7 +171,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -181,7 +181,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
                 <i class="icon icon-topsales"></i>
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
@@ -192,7 +192,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
               </a>
                 <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -202,7 +202,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
                 <i class="icon icon-topsales"></i>
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
@@ -213,7 +213,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
                 <i class="icon icon-topsales"></i>
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
@@ -224,7 +224,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -234,7 +234,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -244,7 +244,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -254,7 +254,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner1.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -264,7 +264,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner2.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -274,7 +274,7 @@
             </div>
             <div class="product clearfix">
               <a href="#" class="product__preview">
-                <img src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
+                <img class="product__img" src="img/products/scanner3.png" alt="Argox A3 сканер штрихкодов">
               </a>
               <a class="product__description" href="#">Argox AS-8000 RS Светодиодный сканер штрихкода, с кабелем, без б/п, черный</a>
               <div class="product__offer">
@@ -341,6 +341,12 @@
               </li>
             </ul>
       		</nav>
+            <div class="contacts footer__contacts">
+            <a href="tel:+78412450054" class="phone">8(8412) 450-054</a>
+            <div class="address footer__address">
+              <span>г.Пенза, ул.Богданова 38</span>
+            </div>
+            </div>
           <div class="copyright">
             <span>© ООО "Сигма", 2010-2013</span>
           </div>

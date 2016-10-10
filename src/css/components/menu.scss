@@ -1,5 +1,5 @@
 .menu {
-  font-size: 1.16em;
+  font-size: 1.2rem;
 }
 
 .submenu {
@@ -24,11 +24,12 @@
 
 .hamburger {
   position: relative;
-  width: 18px;
-  height: 18px;
-  border-color: #000;
-  border-top: 3px solid #000;
-  border-bottom: 3px solid #000;
+  width: 4.5rem;
+  height: 2.5rem;
+  border-color: #00F;
+  border-top: .8rem solid #00F;
+  border-bottom: .8rem solid #00F;
+  background-color: transparent;
 
   &:after {
     content: "";
@@ -36,20 +37,30 @@
     width: 100%;
     display: block;
     border-color: inherit;
-    border-top-width: 3px;
+    border-top-width: .8rem;
     border-top-style: solid;
     top: 50%;
     transform: translate(0, -50%);
   }
 
   &:hover {
-    border-color: #f00;
+    border-color: #66f;
   }
 }
 
-@media screen and (max-width: 940px) {
+.menu__checkbox {
+    display: none;
+}
+
+.menu__checkbox:checked ~ .top-panel__menu__list {
+    max-height: 9999px;
+    transition: max-height .7s ease 0s;
+}
+
+
+@media screen and (max-width: 640px) {
   .menu__button {
     display: block;
-    float: left;
+    // float: left;
   }
 }

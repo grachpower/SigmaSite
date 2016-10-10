@@ -1,7 +1,3 @@
-/*
- * Где форматирование????
- */
-
 var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     del = require('del'),

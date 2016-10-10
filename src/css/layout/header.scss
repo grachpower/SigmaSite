@@ -7,6 +7,8 @@
 .header__contacts {
   float: right;
   margin-top: 1.2rem;
+  text-align: right;
+  color: #00378a;
 }
 
 .header__basket {
@@ -14,8 +16,16 @@
   margin-left: 2.4rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
   .header__contacts {
     display: none;
+  }
+
+  .header__logo {
+      width: 45%;
+  }
+
+  .header__basket {
+      margin-left: 0;
   }
 }
