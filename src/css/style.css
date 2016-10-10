@@ -118,7 +118,6 @@ button {
   display: none; }
 
 .hamburger {
-  display: inline-block;
   position: relative;
   width: 4.5rem;
   height: 2rem;
@@ -146,6 +145,10 @@ button {
 .menu__checkbox:checked ~ .top-panel__menu__list {
   max-height: 9999px;
   transition: max-height 0.7s ease 0s; }
+
+@media screen and (max-width: 640px) {
+  .menu__button {
+    display: block; } }
 
 .pagination {
   margin-top: 4em;
@@ -241,8 +244,8 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 80px;
-  height: 80px;
+  width: 7rem;
+  height: 7rem;
   background-image: url(../img/products/top_sales.png); }
   .icon-topsales:before {
     font-style: normal;
@@ -257,8 +260,8 @@ button {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 80px;
-  height: 80px;
+  width: 7rem;
+  height: 7rem;
   background-image: url(../img/products/stock.png); }
   .icon-stock:before {
     font-style: normal;

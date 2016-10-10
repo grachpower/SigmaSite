@@ -23,7 +23,6 @@
 }
 
 .hamburger {
-    display: inline-block;
     position: relative;
     width: 4.5rem;
     height: 2rem;
@@ -57,4 +56,10 @@
 .menu__checkbox:checked ~ .top-panel__menu__list {
     max-height: 9999px;
     transition: max-height 0.7s ease 0s;
+}
+
+@media screen and (max-width: 640px) {
+    .menu__button {
+        display: block;
+    }
 }
