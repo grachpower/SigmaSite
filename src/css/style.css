@@ -15,10 +15,6 @@ body {
   html {
     font-size: 8px; } }
 
-@media screen and (max-width: 640px) {
-  html {
-    font-size: 7px; } }
-
 button {
   border: none;
   cursor: pointer; }
@@ -67,9 +63,9 @@ button {
       display: none; }
   .basket__caption {
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
     margin-top: .7rem;
     text-indent: -9999px;
     background-image: url(../img/cart.svg);
@@ -79,16 +75,16 @@ button {
     display: inline-block; }
   .sign-in {
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-image: url(../img/enter.svg);
     background-size: contain;
     text-indent: -9999px;
-    margin-right: 1rem; }
+    margin-right: 2rem; }
   .sign-up {
     display: inline-block;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-image: url(../img/key.svg);
     background-size: contain;
     text-indent: -9999px; } }
@@ -122,12 +118,14 @@ button {
   display: none; }
 
 .hamburger {
+  display: inline-block;
   position: relative;
   width: 4.5rem;
-  height: 2.5rem;
+  height: 2rem;
+  margin-top: .25rem;
   border-color: #00F;
-  border-top: .8rem solid #00F;
-  border-bottom: .8rem solid #00F;
+  border-top: 0.8rem solid #00F;
+  border-bottom: 0.8rem solid #00F;
   background-color: transparent; }
   .hamburger:after {
     content: "";
@@ -135,7 +133,7 @@ button {
     width: 100%;
     display: block;
     border-color: inherit;
-    border-top-width: .8rem;
+    border-top-width: 0.8rem;
     border-top-style: solid;
     top: 50%;
     transform: translate(0, -50%); }
@@ -147,11 +145,7 @@ button {
 
 .menu__checkbox:checked ~ .top-panel__menu__list {
   max-height: 9999px;
-  transition: max-height .7s ease 0s; }
-
-@media screen and (max-width: 640px) {
-  .menu__button {
-    display: block; } }
+  transition: max-height 0.7s ease 0s; }
 
 .pagination {
   margin-top: 4em;
@@ -330,7 +324,11 @@ button {
     width: 4.5rem; }
     .search__button:before {
       width: 3rem;
-      height: 3rem; } }
+      height: 3rem; }
+  .search__field {
+    display: block;
+    height: 4rem;
+    width: 16rem; } }
 
 .services-menu {
   margin-top: 2.2rem;
@@ -390,8 +388,9 @@ button {
   .top-panel__menu__list {
     max-height: 0;
     overflow: hidden;
-    line-height: 2;
-    transition: max-height .7s ease 0s;
+    line-height: 2.5;
+    transition: max-height .7s ease 0s; }
+  .top-panel__menu {
     font-size: 1.6rem; }
   .top-panel__menu__item {
     display: block; } }

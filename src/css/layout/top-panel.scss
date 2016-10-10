@@ -13,9 +13,12 @@
   .top-panel__menu__list {
     max-height: 0;
     overflow: hidden;
-    line-height: 2;
+    line-height: 2.5;
     transition: max-height .7s ease 0s;
-    font-size: 1.6rem;
+  }
+
+  .top-panel__menu {
+      font-size: 1.6rem;
   }
 
   .top-panel__menu__item {
