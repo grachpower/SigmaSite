@@ -3,6 +3,8 @@
   border-radius: 2.2rem;
   background: linear-gradient(to top, #ff9700, #ffc500);
   font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .service-menu__list {
@@ -11,7 +13,6 @@
 }
 
 .service-menu__item {
-  float: left;
   width: calc(20% - 2px);
   padding-bottom: .7rem;
   text-align: center;
@@ -29,6 +30,10 @@
   }
 }
 
+.service-menu__item__caption {
+    white-space: nowrap;
+}
+
 .service-icon {
   height: 4.6rem;
   width: 100%;
@@ -36,8 +41,59 @@
   background-size: auto;
 }
 
-// @media screen and (max-width: 640px) {
-//     .service-icon {
-//         display: none;
-//     }
-// }
+@media screen and (max-width: 640px) {
+    .services-menu {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .service-menu__item {
+        display: table-cell;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .services-menu {
+        font-size: 1.4rem;
+        position: relative;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0rem;
+            height: 4rem;
+            width: 4rem;
+            background-image: url(../img/chevron-left.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(0, -50%);
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0rem;
+            height: 4rem;
+            width: 4rem;
+            background-image: url(../img/chevron-right.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translate(0, -50%);
+        }
+    }
+
+    .service-menu__list {
+        font-size: 1.4rem;
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .service-menu__item {
+        float: left;
+    }
+}

@@ -25,11 +25,11 @@
 .hamburger {
     position: relative;
     width: 4.5rem;
-    height: 2rem;
+    height: 1.8rem;
     margin-top: .25rem;
-    border-color: #00F;
-    border-top: 0.8rem solid #00F;
-    border-bottom: 0.8rem solid #00F;
+    border-color: #000;
+    border-top: 0.6rem solid #000;
+    border-bottom: 0.6rem solid #000;
     background-color: transparent;
 
     &:after {
@@ -38,7 +38,7 @@
         width: 100%;
         display: block;
         border-color: inherit;
-        border-top-width: 0.8rem;
+        border-top-width: 0.6rem;
         border-top-style: solid;
         top: 50%;
         transform: translate(0, -50%);

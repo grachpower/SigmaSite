@@ -92,14 +92,37 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .product {
-    width: calc(50% - 3em);
-  }
+@media screen and (max-width: 640px) {
+    .product__add-to-basket {
+      width: 5rem;
+      height: 4rem;
+    }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 340px) {
+    .product {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .icon-stock {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .icon-topsales {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (max-width: 640px) and (min-width: 341px) {
   .product__description {
     text-align: center;
+  }
+
+  .product {
+    width: calc(50% - 3em);
   }
 }

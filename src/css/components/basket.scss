@@ -52,9 +52,15 @@
         margin-right: 2rem;
         margin-top: .7rem;
         text-indent: -9999px;
+        vertical-align: top;
+    }
+
+    .basket__link {
+        display: block;
+        width: 4rem;
+        height: 4rem;
         background-image: url(../img/cart.svg);
         background-size: contain;
-        vertical-align: top;
     }
 
     .auth {

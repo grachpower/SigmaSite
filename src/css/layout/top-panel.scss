@@ -10,18 +10,27 @@
 
 
 @media screen and (max-width: 640px) {
-  .top-panel__menu__list {
-    max-height: 0;
-    overflow: hidden;
-    line-height: 2.5;
-    transition: max-height .7s ease 0s;
-  }
+    .top-panel__menu__list {
+        max-height: 0;
+        overflow: hidden;
+        line-height: 2.5;
+        transition: max-height .7s ease 0s;
+        margin-top: 1rem;
+    }
 
   .top-panel__menu {
-      font-size: 1.6rem;
+      font-size: 2rem;
+      margin-top: 1%;
+      width: 85%;
+      text-align: center;
   }
 
   .top-panel__menu__item {
-      display: block;
+    display: block;
+    margin-right: 0;
+
+    &:hover {
+        background-color: rgb(185, 185, 185);
+    }
   }
 }
