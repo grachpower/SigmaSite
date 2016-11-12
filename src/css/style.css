@@ -184,9 +184,13 @@ button {
     border-color: #fff; }
 
 .menu__checkbox:checked ~ .menu__list {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: stretch;
   align-items: stretch;
   position: fixed;
   top: 0;
@@ -500,8 +504,11 @@ button {
   padding: 0 .8rem; }
 
 .main-container_space-between {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center; }
 
 @media screen and (max-width: 640px) {
