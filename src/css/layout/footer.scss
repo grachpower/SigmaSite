@@ -5,8 +5,9 @@
   padding-right: 1rem;
   position: absolute;
   bottom: 0;
-  max-width: 100%;
+  width: 100%;
   background-color: #cdcdcd;
+  box-sizing: border-box;
 }
 
 .footer__menu {

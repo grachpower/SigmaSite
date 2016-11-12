@@ -170,9 +170,13 @@ button {
     border-color: #fff; }
 
 .menu__checkbox:checked ~ .menu__list {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: stretch;
   align-items: stretch;
   position: fixed;
   top: 0;
@@ -486,8 +490,11 @@ button {
   padding: 0 .8rem; }
 
 .main-container_space-between {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -ms-flex-align: center;
   align-items: center; }
 
 @media screen and (max-width: 640px) {
@@ -587,8 +594,9 @@ button {
   padding-right: 1rem;
   position: absolute;
   bottom: 0;
-  max-width: 100%;
-  background-color: #cdcdcd; }
+  width: 100%;
+  background-color: #cdcdcd;
+  box-sizing: border-box; }
 
 .footer__menu {
   margin-bottom: 3rem; }
@@ -637,19 +645,6 @@ a {
 .icon {
   background-repeat: no-repeat;
   background-size: contain;
-  display: inline-block; }
-
-.title {
-  color: #002e79;
-  font-weight: bold; }
-
-.content__title {
-  margin-left: 2.4rem;
-  font-size: 2.1rem; }
-
-ul {
-  list-style: none; }
-: contain;
   display: inline-block; }
 
 .title {
