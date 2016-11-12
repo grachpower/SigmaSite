@@ -47,8 +47,8 @@
 
     .basket__caption {
         display: inline-block;
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
         margin-right: 1.5rem;
         margin-top: .7rem;
         text-indent: -9999px;
@@ -57,8 +57,8 @@
 
     .basket__link {
         display: block;
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
         background-image: url(../img/cart.svg);
         background-size: contain;
     }
@@ -69,8 +69,8 @@
 
     .sign-in {
         display: inline-block;
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
         background-image: url(../img/enter.svg);
         background-size: contain;
         text-indent: -9999px;
@@ -79,10 +79,32 @@
 
     .sign-up {
         display: inline-block;
-        width: 3rem;
-        height: 3rem;
+        width: 5rem;
+        height: 5rem;
         background-image: url(../img/key.svg);
         background-size: contain;
         text-indent: -9999px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .basket__caption {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .basket__link {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .sign-in {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .sign-up {
+        width: 3rem;
+        height: 3rem;
     }
 }
