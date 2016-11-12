@@ -22,40 +22,73 @@
     display: none;
 }
 
-.hamburger {
-    position: relative;
-    width: 4.5rem;
-    height: 1.8rem;
-    margin-top: .25rem;
-    border-color: #000;
-    border-top: 0.6rem solid #000;
-    border-bottom: 0.6rem solid #000;
-    background-color: transparent;
-
-    &:after {
-        content: "";
-        position: absolute;
-        width: 100%;
-        display: block;
-        border-color: inherit;
-        border-top-width: 0.6rem;
-        border-top-style: solid;
-        top: 50%;
-        transform: translate(0, -50%);
-    }
-
-    &:hover {
-        border-color: #66f;
-    }
-}
-
 .menu__checkbox {
     display: none;
 }
 
-.menu__checkbox:checked ~ .top-panel__menu__list {
-    max-height: 9999px;
-    transition: max-height 0.7s ease 0s;
+.hamburger {
+    display: none;
+    height: 1.2rem;
+    width: 3rem;
+    position: relative;
+    background-color: transparent;
+    border-bottom: .5rem solid;
+    border-top: .5rem solid;
+    border-color: $color-orange;
+    transition: border-color .6s ease .7s;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        border-top: .5rem solid;
+        border-color: $color-orange;
+        transition: transform .7s ease 0s;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        width: 100%;
+        border-top: .5rem solid;
+        border-color: $color-orange;
+        transition: transform .7s ease 0s;
+    }
+}
+
+.menu__checkbox:checked ~ .hamburger {
+    border-color: transparent;
+
+    &:before {
+        transform: rotate(135deg);
+        border-color: #fff;
+    }
+
+    &:after {
+        transform: rotate(-135deg);
+        border-color: #fff;
+    }
+    z-index: 3;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $color-orange;
+    z-index: 2;
 }
 
 @media screen and (max-width: 640px) {

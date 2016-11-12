@@ -18,7 +18,7 @@
 }
 
 .product__img {
-    width: 70%;
+    max-width: 70%;
     height: auto;
 }
 
@@ -94,8 +94,29 @@
 
 @media screen and (max-width: 640px) {
     .product__add-to-basket {
-      width: 5rem;
-      height: 4rem;
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .icon-stock {
+        border-radius: 50%;
+        background-color: $color-orange;
+        background-image: none;
+    }
+
+    .icon-topsales {
+        border-radius: 50%;
+        background-color: rgb(33, 62, 213);
+        background-image: none;
+    }
+
+    .products {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .icon-topsales, .icon-stock {
+        top: 0;
     }
 }
 

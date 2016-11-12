@@ -11,5 +11,12 @@
 @media screen and (max-width: 768px) {
   .content {
     width: 100%;
+    border-radius: 0;
   }
+}
+
+@media screen and (max-width: 640px) {
+    .content {
+        margin-top: 1rem;
+    }
 }

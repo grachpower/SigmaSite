@@ -17,16 +17,21 @@
 }
 
 @media screen and (max-width: 640px) {
-  .header__contacts {
-    display: none;
-  }
+    .header {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 
-  .header__logo {
-      width: 45%;
-  }
+    .header__contacts {
+        display: none;
+    }
 
-  .header__basket {
-      margin-left: 0;
-      margin-top: 3%;
-  }
+    .header__logo {
+        width: 55%;
+    }
+
+    .header__basket {
+        margin-left: 0;
+        margin-top: 5%;
+    }
 }

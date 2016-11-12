@@ -21,6 +21,7 @@
     "gulp-html-minifier": "^0.1.8",
     "gulp-htmlmin": "^2.0.0",
     "gulp-imagemin": "^3.0.3",
+    "gulp-sass": "^2.3.2",
     "gulp-watch": "^4.3.9",
     "gulp.spritesmith": "^6.2.1"
   },
