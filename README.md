@@ -1,11 +1,10 @@
-#Верстка "Сигма"#
+#Верстка "Сигма"
 
-##Описание:##
+##Описание:
 
    * верстка страницы сайта "Сигма"
 
-##Файловая структура:##
-
+##Файловая структура:
     * src
         * css
             * **components** каталог с компонентами страницы:
@@ -18,7 +17,6 @@
                 * products.scss
                 * search.scss
                 * services.scss
-
             * **layout** каталог с элементами каркаса страницы:
                 * content.scss
                 * footer.scss
@@ -28,23 +26,19 @@
                 * page.scss
                 * sidebar.scss
                 * top-panel.scss
-
             * **typographics** каталог стилей для типографических элементов
                 * icon.scss
                 * links.scss
                 * titles.scss
                 * typographics.scss
-
             * helpers.scss стили вспомогательных элементов
             * setting.scss настойки проекта
             * style.scss основные стили проекта
-
         * img каталог изображений проекта
         * index.html страница проекта
-
     * dist каталог с минифицированными файлами проекта
 
-##Поддерживаемые браузерыe##
+##Поддерживаемые браузерыe
 
     * IE 11
     * Google Chrome(last version)
